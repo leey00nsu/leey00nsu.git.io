@@ -2,109 +2,152 @@
 <html lang="kr">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Leeyoonsu's Portfolio</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap Icons-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>이윤수의 포트폴리오입니다.</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
     />
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- SimpleLightbox plugin CSS-->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
-      rel="stylesheet"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
-      <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">leey00nsu</a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-      <div class="container px-4 px-lg-5 h-100">
-        <div
-          class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
-        >
-          <div class="col-lg-8 align-self-end">
-            <h1 class="text-black font-weight-bold">안녕하세요</h1>
-            <h1 class="text-black font-weight-bold">이윤수입니다.</h1>
-          </div>
-          <div class="col-lg-8 align-self-baseline">
-            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- About-->
-    <section class="page-section bg-primary" id="about">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">We've got what you need!</h2>
-            <hr class="divider divider-light" />
-            <p class="text-white-75 mb-4">
-              Start Bootstrap has everything you need to get your new website up
-              and running in no time! Choose one of our open source, free to
-              download, and easy to use themes! No strings attached!
-            </p>
-            <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
-    <!-- Footer-->
-    <footer class="bg-light py-5">
-      <div class="container px-4 px-lg-5">
-        <div class="small text-center text-muted">leeyoonsu</div>
-        <div class="small text-center text-muted">All rights reserved</div>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body class="notosanskr">
+    <header class="sticky-top">
+      <nav class="navbar bg-white">
+        <div class="container-fluid mx-5">
+          <div class="navbar-brand fw-light">이윤수</div>
+          <a href="https://github.com/leey00nsu" class="navbar-brand fw-light"
+            >Github</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- 인트로 화면 -->
+      <div class="card text-black border-0">
+        <img
+          src="./img/background.jpg"
+          class="card-img-top img-fluid opacity-25"
+          alt="..."
+        />
+        <div
+          class="card-img-overlay d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="text-center">
+            <div class="fs-1 mb-5">안녕하세요.</div>
+            <span class="fs-1 typeText fw-bold"></span>
+            <span class="fs-1">개발자</span>
+            <div class="fs-1 mt-5">이윤수 입니다.</div>
+          </div>
+        </div>
       </div>
+
+      <div class="bg-white container-fluid pt-5 pb-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="bg-white profile mb-4">
+            <img class="img-fluid" src="./img/profile.jpg" />
+          </div>
+          <div class="fs-3 mb-5 fw-semibold">About Me</div>
+          <div class="row w-100 text-center">
+            <div class="mx-auto col">
+              <img src="./img/person.png" />
+              <span class="fs-5 fw-light mx-4">이윤수</span>
+            </div>
+            <div class="mx-auto col">
+              <img src="./img/mail.png" />
+              <span class="fs-5 fw-light mx-4">dbstndla1212@naver.com</span>
+            </div>
+            <div class="mx-auto col">
+              <img src="./img/school.png" />
+              <span
+                type="button"
+                class="fs-5 fw-light mx-4"
+                data-bs-toggle="modal"
+                data-bs-target="#mapModal"
+                >삼육대학교 컴퓨터공학과</span
+              >
+              <!-- 지도 모달 -->
+              <div
+                class="modal fade"
+                id="mapModal"
+                tabindex="-1"
+                aria-labelledby="mapModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="mapModalLabel">삼육대학교</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body iframe-container">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.239102805168!2d127.10415721572856!3d37.64358237978354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb9dae1dbae07%3A0xbce86702f405de68!2z7IK87Jyh64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1657687033589!5m2!1sko!2skr"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-light container-fluid pt-5 pb-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="fs-3 mb-5 fw-semibold">Skills</div>
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="skill-box drop-shadow h-100 px-3 py-3">
+                <div class="fs-4 fw-semibold mb-2">Front-End</div>
+                <img class="img-fluid" src="./img/frontend.png"></img>
+                <img class="img-fluid" src="./img/react.png"></img>
+              </div>
+              <div class=" mx-auto skill-box drop-shadow h-100 px-3 py-3">
+                <div >
+                  <div class="fs-4 fw-semibold mb-2">Back-End</div>
+                  <img class="img-fluid" src="./img/django.png"></img>
+                </div>
+              </div>
+              <div class=" skill-box drop-shadow h-100 px-3 py-3">
+                <div class="fs-4 fw-semibold mb-2">Languages-End</div>
+                <img class="img-fluid w-50" src="./img/c.png"></img>
+                <img class="img-fluid w-75" src="./img/java.png"></img>
+                <img class="img-fluid" src="./img/python.png"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-secondary text-white text-center pt-3 pb-3">
+      <div class="fw-lighter">© Leeyoonsu 2022.</div>
+      <div class="fw-lighter">All rights reserved</div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
