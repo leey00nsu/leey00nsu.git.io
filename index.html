@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div class="bg-white container-fluid pt-5 pb-5">
+      <div class="bg-white pt-5 pb-5">
         <div
           class="d-flex flex-column justify-content-center align-items-center"
         >
@@ -55,16 +55,16 @@
             <img class="img-fluid" src="./img/profile.jpg" />
           </div>
           <div class="fs-3 mb-5 fw-semibold">About Me</div>
-          <div class="row w-100 text-center">
-            <div class="mx-auto col">
+          <div class="container-fluid row text-center">
+            <div class="col-xl">
               <img src="./img/person.png" />
               <span class="fs-5 fw-light mx-4">이윤수</span>
             </div>
-            <div class="mx-auto col">
+            <div class="col-xl">
               <img src="./img/mail.png" />
               <span class="fs-5 fw-light mx-4">dbstndla1212@naver.com</span>
             </div>
-            <div class="mx-auto col">
+            <div class="col-xl">
               <img src="./img/school.png" />
               <span
                 type="button"
@@ -109,25 +109,32 @@
         </div>
       </div>
 
-      <div class="bg-light container-fluid pt-5 pb-5">
+      <div class="bg-light pt-5 pb-5">
         <div
-          class="d-flex flex-column justify-content-center align-items-center"
+          class="d-flex flex-column justify-content-between align-items-center"
         >
           <div class="fs-3 mb-5 fw-semibold">Skills</div>
-          <div class="container">
-            <div class="d-flex justify-content-center text-center">
-              <div class="skill-box drop-shadow h-100 px-3 py-3">
+          <div class="container text-center px-4">
+            <div class="row gx-6">
+              <div class="col-sm skill-box drop-shadow px-3 py-3 h-100">
                 <div class="fs-4 fw-semibold mb-2">Front-End</div>
                 <img class="img-fluid" src="./img/frontend.png"></img>
                 <img class="img-fluid" src="./img/react.png"></img>
               </div>
-              <div class=" mx-auto skill-box drop-shadow h-100 px-3 py-3">
-                <div >
-                  <div class="fs-4 fw-semibold mb-2">Back-End</div>
-                  <img class="img-fluid" src="./img/django.png"></img>
+              <div class="col-sm">
+                <div class="row gy-5">
+                  <div class="skill-box drop-shadow px-3 py-3 h-100">
+                    <div class="fs-4 fw-semibold mb-2">Back-End</div>
+                    <img class="img-fluid" src="./img/django.png"></img>
+                  </div>
+                  <div class="skill-box drop-shadow px-3 py-3 h-100">
+                    <div class="fs-4 fw-semibold mb-2">Version-Control</div>
+                    <img class="img-fluid w-75" src="./img/git.png"></img>
+                    <img class="img-fluid px-3 py-3" src="./img/github.png"></img>
+                  </div>
                 </div>
               </div>
-              <div class=" skill-box drop-shadow h-100 px-3 py-3">
+              <div class="col-sm skill-box drop-shadow px-3 py-3 h-100">                
                 <div class="fs-4 fw-semibold mb-2">Languages</div>
                 <img class="img-fluid w-50" src="./img/c.png"></img>
                 <img class="img-fluid w-75" src="./img/java.png"></img>
@@ -140,8 +147,8 @@
     </main>
 
     <footer class="bg-secondary text-white text-center pt-3 pb-3">
-      <div class="fw-lighter">© Leeyoonsu 2022.</div>
-      <div class="fw-lighter">All rights reserved</div>
+      <div class="fw-lighter">© Leeyoonsu 2022</div>
+      <div class="fw-lighter">All rights reserved.</div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
