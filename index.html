@@ -18,10 +18,10 @@
 
   <body class="notosanskr">
     <header class="sticky-top">
-      <nav class="navbar bg-white">
+      <nav class="navbar bg-white shadow-sm">
         <div class="container-fluid mx-5">
-          <div class="navbar-brand fw-light">이윤수</div>
-          <a href="https://github.com/leey00nsu" class="navbar-brand fw-light"
+          <a href="#"><div class="navbar-brand fw-bold">이윤수</div></a>
+          <a href="https://github.com/leey00nsu" class="navbar-brand fw-bold"
             >Github</a
           >
         </div>
@@ -29,7 +29,7 @@
     </header>
     <main>
       <!-- 인트로 화면 -->
-      <div class="card text-black border-0">
+      <div class="card text-black border-0 w-100">
         <img
           src="./img/background.jpg"
           class="card-img-top img-fluid opacity-25"
@@ -54,25 +54,34 @@
           <div class="bg-white profile mb-4">
             <img class="img-fluid" src="./img/profile.jpg" />
           </div>
-          <div class="fs-3 mb-5 fw-semibold">About Me</div>
-          <div class="container-fluid row row-cols-lg-3 text-center">
-            <div class="col-xl d-inline-flex justify-content-start justify-content-lg-center align-items-center">
+          <div class="fs-3 mb-5 fw-semibold text-center">About Me</div>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-lg-between justify-content-between about-me"
+          >
+            <div
+              class="d-flex justify-content-lg-center justify-content-start align-items-center about-me-item"
+            >
               <img class="" src="./img/person.png" />
               <div class="fs-5 fw-light ms-4">이윤수</div>
             </div>
-            <div class="col-xl d-inline-flex justify-content-start justify-content-lg-center align-items-center ">
+            <div
+              class="d-flex justify-content-lg-center justify-content-start align-items-center about-me-item"
+            >
               <img src="./img/mail.png" />
               <div class="fs-5 fw-light ms-4">dbstndla1212@naver.com</div>
             </div>
-            <div class="col-xl d-inline-flex justify-content-start justify-content-lg-center align-items-center ">
+            <div
+              class="d-flex justify-content-lg-center justify-content-start align-items-center about-me-item"
+            >
               <img src="./img/school.png" />
               <div
                 type="button"
                 class="fs-5 fw-light ms-4"
                 data-bs-toggle="modal"
                 data-bs-target="#mapModal"
-                >삼육대학교 컴퓨터공학과</div
               >
+                삼육대학교 컴퓨터공학과
+              </div>
               <!-- 지도 모달 -->
               <div
                 class="modal fade"
@@ -84,7 +93,9 @@
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="mapModalLabel">삼육대학교</h5>
+                      <div class="modal-title" id="mapModalLabel">
+                        삼육대학교
+                      </div>
                       <button
                         type="button"
                         class="btn-close"
@@ -110,38 +121,66 @@
       </div>
 
       <div class="bg-light pt-5 pb-5">
-        <div
-          class="text-center"
-        >
+        <div class="text-center">
           <div class="fs-3 mb-5 fw-semibold">Skills</div>
           <div class="container text-center px-4">
-            <div class="row gx-6 gy-5">
+            <div class="row gy-5">
               <div class="col-md-4">
-                <div class="skill-box drop-shadow px-3 py-3 ">
-                  <div class="fs-5 fw-semibold mb-2">Front-End</div>
-                  <img class="img-fluid" src="./img/frontend.png"></img>
-                  <img class="img-fluid" src="./img/react.png"></img>
+                <div class="skill-box drop-shadow px-3 py-3">
+                  <div class="fs-5 fw-light mb-2">Front-End</div>
+                  <img class="img-fluid" src="./img/frontend.png" />
+                  <img class="img-fluid" src="./img/react.png" />
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="row gy-5">
-                  <div class="skill-box drop-shadow px-3 py-3 ">
-                    <div class="fs-5 fw-semibold mb-2">Back-End</div>
-                    <img class="img-fluid" src="./img/django.png"></img>
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div
+                    class="skill-box drop-shadow px-3 py-3"
+                    style="flex-grow: 1"
+                  >
+                    <div
+                      class="d-flex flex-column justify-content-start align-items-center h-100"
+                    >
+                      <div class="fs-5 fw-light mb-2">Back-End</div>
+                      <div
+                        class="d-flex flex-column justify-content-evenly align-items-center h-100"
+                      >
+                        <img class="img-fluid" src="./img/django.png" />
+                      </div>
+                    </div>
                   </div>
-                  <div class="skill-box drop-shadow px-3 py-3 ">
-                    <div class="fs-5 fw-semibold mb-2">Version-Control</div>
-                    <img class="img-fluid w-75" src="./img/git.png"></img>
-                    <img class="img-fluid px-3 py-3" src="./img/github.png"></img>
+                  <div>　</div>
+                  <div
+                    class="skill-box drop-shadow px-3 py-3"
+                    style="flex-grow: 2"
+                  >
+                    <div class="d-flex flex-column justify-content-start h-100">
+                      <div class="fs-5 fw-light mb-2">Version-Control</div>
+                      <div
+                        class="d-flex flex-column justify-content-evenly align-items-center h-100"
+                      >
+                        <img class="img-fluid w-auto" src="./img/git.png" />
+                        <img
+                          class="img-fluid px-3 py-3"
+                          src="./img/github.png"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">            
-                <div class="skill-box drop-shadow px-3 py-3 ">            
-                  <div class="fs-5 fw-semibold mb-2">Languages</div>
-                  <img class="img-fluid w-50" src="./img/c.png"></img>
-                  <img class="img-fluid w-75" src="./img/java.png"></img>
-                  <img class="img-fluid" src="./img/python.png"></img>
+              <div class="col-md-4">
+                <div class="skill-box drop-shadow px-3 py-3 h-100">
+                  <div class="d-flex flex-column justify-content-start h-100">
+                    <div class="fs-5 fw-light mb-2">Languages</div>
+                    <div
+                      class="d-flex flex-column justify-content-evenly align-items-center h-100"
+                    >
+                      <img class="img-fluid w-75" src="./img/c.png" />
+                      <img class="img-fluid w-75" src="./img/java.png" />
+                      <img class="img-fluid" src="./img/python.png" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,30 +193,59 @@
           class="d-flex flex-column justify-content-center align-items-center"
         >
           <div class="fs-3 mb-5 fw-semibold">Project</div>
-          <div class="container text-center px-4">
-            <div class="row justify-content-center">
-              <div class="col-md-10 ">
-                <div class="skill-box drop-shadow px-3 py-3 row w-100 mx-0">
-                  <img class="col-md-6 img-fluid" src="./img/ilsanghancut.png"></img>
+          <a href="https://github.com/leey00nsu/ToyProject_GDSC2022">
+            <div class="container text-center px-4 text-black">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="skill-box drop-shadow px-3 py-3 row w-100 mx-0">
+                    <img
+                      class="col-md-6 img-fluid"
+                      src="./img/ilsanghancut.png"
+                    />
 
-                  <div class="col-md-6">
-                        <div class="fs-4 fw-semibold mb-2">
-                          일상:한컷
-                        </div>
-                        <div class="fs-5 fw-light mb-2">
+                    <div
+                      class="col-md-6 d-flex flex-column justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="fs-4 fw-semibold mb-2">일상:한컷</div>
+                        <div class="fs-6 fw-light mb-2">
                           GDSC 토이프로젝트를 통해 진행한 팀 프로젝트입니다.
                         </div>
-                        <div class="fs-5 fw-light mb-2">
-                          기본적인 CRUD가 구현된 다이어리입니다.                     
+                        <div class="fs-6 fw-light mb-2">
+                          기본적인 CRUD가 구현된 메모장입니다.
                         </div>
+                        <div class="fs-6 fw-light mb-2">2022.08</div>
+                      </div>
+                      <div>
+                        <div class="fs-6 fw-light mb-2">
+                          <img
+                            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                          />
+                          <img
+                            src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                          />
+                          <img
+                            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                          />
+                          <img
+                            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                          />
+                          <img
+                            src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"
+                          />
+                          <img
+                            src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
-
     </main>
 
     <footer class="bg-secondary text-white text-center pt-3 pb-3">
